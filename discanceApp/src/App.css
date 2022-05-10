@@ -1,7 +1,58 @@
-.map{
-  height: 100vh;
-  overflow: hidden;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.App{
+
+  height: 600px;
+  width: 100vh;
+  text-align: center;
+}
+.map{
+  height: 100%;
+  width: 100%;
+  
+  
+}
+.co-ordinates h1{
+font-size: 21px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.co-ordinates input{
+  display: block;
+  margin:10px;
+  width:250px;
+  height: 30px;
+
+}
+.co-ordinates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:5px;
+  padding:5px;
+
+
+}
+
+
 .marker{
-  background-color:url();
+  background-image:url('https://i.imgur.com/oz3r3Wq.png');
+  background-size: cover;
+  width:22px;
+  height: 22px;
+  background-color: yellow;
+  border-radius: 11px;
+  border:solid 3px darkslategray;
+}
+.marker-delivery {
+  background-image: url('https://i.imgur.com/cIooqnp.png');
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  border-radius: 15px;
+  border: solid darkslategrey 3px;
 }
