@@ -56,31 +56,33 @@ const ContactShape = styled.div`
 
 
 const App = () => {
+  const smallScreen = window.screen.width <= 480 ? true : false;
   return (
+    
     <>
-  <Container>
-    <Navbar/>
-    <Intro/>
-    <IntroShape/>
-  </Container>
-  <Container>
-    <Feature/>
-    <FeatureShape/>
-  </Container>
-  <Container>
-    <Service/>
-    <ServiceShape/>
-  </Container>
-  <Container>
-    <Price/>
-    <PriceShape/>
-  </Container>
-  <Container>
+      <Container>
+        <Navbar />
+        <Intro />
+        <IntroShape />
+      </Container>
+      <Container>
+        <Feature />
+        <FeatureShape />
+      </Container>
+      <Container>
+        <Service />
+        {!smallScreen && <ServiceShape />}
+      </Container>
+      <Container>
+        <Price />
+        <PriceShape />
+      </Container>
+      <Container>
         <Contact />
         <ContactShape/>
         <Footer />
       </Container>
-  </>
+    </>
   );
 };
 
